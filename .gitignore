@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pth
+*.pt
+
+# Data (don't commit large datasets)
+data/train_img/
+data/val_img/
+data/*.txt
+*.jpg
+*.jpeg
+*.png
+
+# Results
+results/
+*.csv
+*.log
+
+# Jupyter
+.ipynb_checkpoints

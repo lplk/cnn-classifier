@@ -20,7 +20,6 @@ Before jumping into the model, I did some exploration to understand what we're w
 - Visual samples from each class
 - Key findings that guided the model design
 
-The notebook shows the whole analytical process from "what do we have?" to "what should we do about it?"
 
 ## Requirements
 

@@ -7,7 +7,7 @@ A PyTorch implementation for binary image classification. Built this for a machi
 Trains a CNN to classify images into two categories. The main focus was on:
 - Handling class imbalance properly
 - Preventing data leakage during validation
-- Getting the image-label mapping right (surprisingly tricky!)
+- Getting the image-label mapping right(?) (surprisingly tricky!)
 
 ## Requirements
 
@@ -49,14 +49,14 @@ Nothing fancy, just solid fundamentals.
 
 ## Key decisions
 
-**Fixed 0.5 threshold**: I use 0.5 throughout validation instead of optimizing the threshold. This prevents data leakage but might hurt performance slightly. Better to be conservative.
+**Fixed 0.5 threshold**: I use 0.5 throughout validation instead of optimizing the threshold. This prevents data leakage but might hurt performance slightly.
 
 **Class imbalance handling**: 
 - Weighted sampling during training
 - Class-weighted loss function
 - Extra augmentation for minority class
 
-**Data integrity**: Added lots of checks for the image-label mapping. Had some bugs early on where images weren't matching their labels correctly.
+**Data integrity**: Added lots of checks for the image-label mapping. Had some questions early on where images weren't matching their labels correctly. don't if it's to memic real word data or an error.
 
 ## Results
 
@@ -85,7 +85,7 @@ Kept it simple - everything you need is in train.py. Could split it into modules
 - Saves best model based on validation loss
 - All the standard metrics: accuracy, HTER, ROC curves etc.
 
-Built this over a weekend, so it's not over-engineered but gets the job done reliably.
+Built this over a weekend, so it's not over-engineered but gets the job done.
 
 ## License
 
